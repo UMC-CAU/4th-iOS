@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xOG-cG-pYF">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_st_mission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLl-Az-Ejs">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="홈" id="h54-3g-Mxz">
+                                        <imageReference key="image" image="homekit" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="동네생활" id="HfA-yT-Qfr">
+                                        <imageReference key="image" image="list.bullet.clipboard" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="내 근처" id="1Wc-TD-PnM">
+                                        <imageReference key="image" image="mappin" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="채팅" badgeValue="1" id="4ff-2Q-aWR">
+                                        <imageReference key="image" image="bubble.left.and.bubble.right" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="나의 당근" id="xvK-ff-3u5">
+                                        <imageReference key="image" image="person" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-fZ-vps">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="marketCell" rowHeight="150" id="G0s-Is-1zq" customClass="marketCell" customModule="_st_mission" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G0s-Is-1zq" id="20z-kT-unV">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이폰 팔아요" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaV-QB-q9R">
+                                                    <rect key="frame" x="170" y="11" width="92.333333333333314" height="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울시 흑석동" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-Ns-9YD">
+                                                    <rect key="frame" x="170" y="36" width="98" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV4-pD-cMN">
+                                                    <rect key="frame" x="170" y="63" width="73" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-d8-FAD">
+                                                    <rect key="frame" x="20" y="11" width="130" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="MKT-2t-TMe"/>
+                                                        <constraint firstAttribute="height" constant="130" id="d8T-S0-w4Z"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qaV-QB-q9R" firstAttribute="leading" secondItem="jdA-d8-FAD" secondAttribute="trailing" constant="20" id="CB3-Cy-Fci"/>
+                                                <constraint firstItem="CV4-pD-cMN" firstAttribute="top" secondItem="qaV-QB-q9R" secondAttribute="bottom" constant="32" id="CBj-bT-QMR"/>
+                                                <constraint firstItem="jdA-d8-FAD" firstAttribute="top" secondItem="20z-kT-unV" secondAttribute="topMargin" id="JHZ-e9-7aJ"/>
+                                                <constraint firstItem="mWf-Ns-9YD" firstAttribute="leading" secondItem="jdA-d8-FAD" secondAttribute="trailing" constant="20" id="a5t-lZ-QJi"/>
+                                                <constraint firstItem="jdA-d8-FAD" firstAttribute="leading" secondItem="20z-kT-unV" secondAttribute="leadingMargin" id="bbY-fL-Cbq"/>
+                                                <constraint firstItem="mWf-Ns-9YD" firstAttribute="top" secondItem="20z-kT-unV" secondAttribute="topMargin" constant="25" id="lp3-4P-d78"/>
+                                                <constraint firstItem="qaV-QB-q9R" firstAttribute="top" secondItem="20z-kT-unV" secondAttribute="topMargin" id="rEK-o0-egO"/>
+                                                <constraint firstItem="CV4-pD-cMN" firstAttribute="leading" secondItem="jdA-d8-FAD" secondAttribute="trailing" constant="20" id="vbj-TI-vU4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addresses" destination="mWf-Ns-9YD" id="anr-BA-Ywo"/>
+                                            <outlet property="coin" destination="CV4-pD-cMN" id="lO5-6h-nWW"/>
+                                            <outlet property="images" destination="jdA-d8-FAD" id="pq3-Ul-v2E"/>
+                                            <outlet property="titles" destination="qaV-QB-q9R" id="Lld-Qe-RrG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Knl-VX-ykL">
+                        <barButtonItem key="leftBarButtonItem" title="흑석동" id="xZo-cb-uKD">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="bell" catalog="system" id="ng6-xu-cbH">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="6Yt-3o-c8E">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" id="cCR-Mg-aen">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="PersonText" destination="xvK-ff-3u5" id="zf5-Mg-zMm"/>
+                        <outlet property="chatText" destination="4ff-2Q-aWR" id="9k6-ub-nD9"/>
+                        <outlet property="currentAddress" destination="xZo-cb-uKD" id="E7Q-4T-TIx"/>
+                        <outlet property="homeText" destination="h54-3g-Mxz" id="5KM-3X-nPg"/>
+                        <outlet property="lifeText" destination="HfA-yT-Qfr" id="5nC-up-73f"/>
+                        <outlet property="locationText" destination="1Wc-TD-PnM" id="Vwq-y5-ph7"/>
+                        <outlet property="mainBar" destination="cLl-Az-Ejs" id="kZ4-mg-d2w"/>
+                        <outlet property="tableView" destination="h8U-fZ-vps" id="htu-Ao-oB5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.59541984732823" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G6p-NQ-A3I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xOG-cG-pYF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x3s-Hp-A0q">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="s45-t5-ZqH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNZ-Au-2kr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="bubble.left.and.bubble.right" catalog="system" width="128" height="96"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="mappin" catalog="system" width="106" height="128"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
