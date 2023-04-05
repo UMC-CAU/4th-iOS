@@ -20,8 +20,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 "24,000원","10,000원","100,000원","12,300원"]
     
     let font = UIFont.boldSystemFont(ofSize: 20)
+    
+    
+    // 최상단 주소
     @IBOutlet weak var currentAddress: UIBarButtonItem!
     
+    // 팝업 버튼 오른쪽 하단
+    @IBOutlet weak var popBtn: UIButton!
     
     //tab bar text color
     
@@ -64,12 +69,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 180
     }
     
-    
+
     
     @IBOutlet weak var tableView: UITableView!
+
+    
+    @objc func clickBtn(_ sender: UIButton){
+        if sender.currentImage == UIImage(systemName: "plus"){
+            let xImg = UIImage(systemName: "xmark")
+            sender.setImage(xImg, for: .normal)
+        } else{
+            let xImg = UIImage(systemName: "plus")
+            sender.setImage(xImg, for: .normal)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        popBtn.backgroundColor = UIColor(red: 1.00, green: 0.33, blue: 0.00, alpha: 1.00)
+        popBtn.layer.cornerRadius = popBtn.frame.height / 2
+        popBtn.clipsToBounds = true
+        popBtn.addTarget(self, action: #selector(clickBtn(_:)), for: .touchUpInside)
         
         mainBar.selectedItem = homeText
         currentAddress.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)

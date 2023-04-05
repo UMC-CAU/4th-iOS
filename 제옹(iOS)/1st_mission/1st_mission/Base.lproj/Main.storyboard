@@ -17,61 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLl-Az-Ejs">
-                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="홈" id="h54-3g-Mxz">
-                                        <imageReference key="image" image="homekit" catalog="system" renderingMode="hierarchical">
-                                            <hierarchicalColors>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                            </hierarchicalColors>
-                                        </imageReference>
-                                    </tabBarItem>
-                                    <tabBarItem title="동네생활" id="HfA-yT-Qfr">
-                                        <imageReference key="image" image="list.bullet.clipboard" catalog="system" renderingMode="hierarchical">
-                                            <hierarchicalColors>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                            </hierarchicalColors>
-                                        </imageReference>
-                                    </tabBarItem>
-                                    <tabBarItem title="내 근처" id="1Wc-TD-PnM">
-                                        <imageReference key="image" image="mappin" catalog="system" renderingMode="hierarchical">
-                                            <hierarchicalColors>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                            </hierarchicalColors>
-                                        </imageReference>
-                                    </tabBarItem>
-                                    <tabBarItem title="채팅" badgeValue="1" id="4ff-2Q-aWR">
-                                        <imageReference key="image" image="bubble.left.and.bubble.right" catalog="system" renderingMode="hierarchical">
-                                            <hierarchicalColors>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                            </hierarchicalColors>
-                                        </imageReference>
-                                    </tabBarItem>
-                                    <tabBarItem title="나의 당근" id="xvK-ff-3u5">
-                                        <imageReference key="image" image="person" catalog="system" renderingMode="hierarchical">
-                                            <hierarchicalColors>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                                <color systemColor="systemOrangeColor"/>
-                                            </hierarchicalColors>
-                                        </imageReference>
-                                    </tabBarItem>
-                                </items>
-                            </tabBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-fZ-vps">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-fZ-vps">
+                                <rect key="frame" x="0.0" y="103" width="393" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="marketCell" rowHeight="150" id="G0s-Is-1zq" customClass="marketCell" customModule="_st_mission" customModuleProvider="target">
@@ -127,9 +74,83 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pv-Y5-cvb">
+                                <rect key="frame" x="323" y="698" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1do-ir-O1H"/>
+                                    <constraint firstAttribute="height" constant="60" id="SjA-FY-ACC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLl-Az-Ejs">
+                                <rect key="frame" x="0.0" y="769" width="393" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="홈" id="h54-3g-Mxz">
+                                        <imageReference key="image" image="homekit" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="동네생활" id="HfA-yT-Qfr">
+                                        <imageReference key="image" image="list.bullet.clipboard" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="내 근처" id="1Wc-TD-PnM">
+                                        <imageReference key="image" image="mappin" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="채팅" badgeValue="1" id="4ff-2Q-aWR">
+                                        <imageReference key="image" image="bubble.left.and.bubble.right" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                    <tabBarItem title="나의 당근" id="xvK-ff-3u5">
+                                        <imageReference key="image" image="person" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                                <color systemColor="systemOrangeColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h8U-fZ-vps" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10.5" id="8uf-om-2XC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8pv-Y5-cvb" secondAttribute="trailing" constant="10" id="ALa-UZ-S7g"/>
+                            <constraint firstItem="cLl-Az-Ejs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bbf-CM-eCf"/>
+                            <constraint firstItem="h8U-fZ-vps" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mat-oI-HLD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8pv-Y5-cvb" secondAttribute="bottom" constant="60" id="XSP-YC-Ccm"/>
+                            <constraint firstItem="cLl-Az-Ejs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZUE-fY-NEw"/>
+                            <constraint firstAttribute="bottom" secondItem="cLl-Az-Ejs" secondAttribute="bottom" id="chv-6r-kUA"/>
+                            <constraint firstItem="h8U-fZ-vps" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iTo-dK-svY"/>
+                            <constraint firstItem="h8U-fZ-vps" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u6R-6S-KRN"/>
+                            <constraint firstItem="h8U-fZ-vps" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xdh-N9-mpb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Knl-VX-ykL">
                         <barButtonItem key="leftBarButtonItem" title="흑석동" id="xZo-cb-uKD">
@@ -155,6 +176,7 @@
                         <outlet property="lifeText" destination="HfA-yT-Qfr" id="5nC-up-73f"/>
                         <outlet property="locationText" destination="1Wc-TD-PnM" id="Vwq-y5-ph7"/>
                         <outlet property="mainBar" destination="cLl-Az-Ejs" id="kZ4-mg-d2w"/>
+                        <outlet property="popBtn" destination="8pv-Y5-cvb" id="j9V-xB-bOf"/>
                         <outlet property="tableView" destination="h8U-fZ-vps" id="htu-Ao-oB5"/>
                     </connections>
                 </viewController>
@@ -191,6 +213,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="mappin" catalog="system" width="106" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
