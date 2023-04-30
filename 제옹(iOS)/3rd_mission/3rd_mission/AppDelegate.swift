@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  2nd_mission
+//  3rd_mission
 //
-//  Created by 정의찬 on 2023/04/11.
+//  Created by 정의찬 on 2023/04/30.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Thread.sleep(forTimeInterval: 1.0)
+        // Override point for customization after application launch.
         return true
     }
 
