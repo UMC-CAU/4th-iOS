@@ -2,37 +2,31 @@
 //  ViewController.swift
 //  5th
 //
-//  Created by 정의찬 on 2023/05/03.
+//  Created by 정의찬 on 2023/05/13.
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var refScroll: UIScrollView!
-    var refreshControl: UIRefreshControl?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        config()
-    }
     
-    private func config() {
-        refreshControl = UIRefreshControl()
-        refreshControl?.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
-        refreshControl?.tintColor = UIColor.systemIndigo
-        refreshControl?.attributedTitle = NSAttributedString(string: "Refreshing", attributes: [.foregroundColor: UIColor.systemIndigo])
-        refScroll.addSubview(refreshControl!)
+        let animationView: LottieAnimationView = .init(name: "loading")
+        self.view.addSubview(animationView)
+        
+        animationView.frame = self.view.bounds
+        animationView.center = self.view.center
+        animationView.contentMode = .scaleAspectFit
+        
+        animationView.play()
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 5
     }
 
-    @objc func handleRefresh() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.refreshControl?.endRefreshing()
-        }
-    }
 
 }
-
-
 

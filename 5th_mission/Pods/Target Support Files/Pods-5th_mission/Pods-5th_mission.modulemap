@@ -1,0 +1,6 @@
+framework module Pods_5th_mission {
+  umbrella header "Pods-5th_mission-umbrella.h"
+
+  export *
+  module * { export * }
+}
