@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D166932A137AFA0038D829 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D166922A137AFA0038D829 /* secondViewController.swift */; };
 		48D95B3F2A10733C0033817B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D95B3E2A10733C0033817B /* AppDelegate.swift */; };
 		48D95B412A10733C0033817B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D95B402A10733C0033817B /* SceneDelegate.swift */; };
 		48D95B432A10733C0033817B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D95B422A10733C0033817B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48D166922A137AFA0038D829 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		48D95B3B2A10733C0033817B /* 7th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7th.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D95B3E2A10733C0033817B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D95B402A10733C0033817B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				48D95B3E2A10733C0033817B /* AppDelegate.swift */,
 				48D95B402A10733C0033817B /* SceneDelegate.swift */,
 				48D95B422A10733C0033817B /* ViewController.swift */,
+				48D166922A137AFA0038D829 /* secondViewController.swift */,
 				48D95B442A10733C0033817B /* Main.storyboard */,
 				48D95B472A10733D0033817B /* Assets.xcassets */,
 				48D95B492A10733D0033817B /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D166932A137AFA0038D829 /* secondViewController.swift in Sources */,
 				48D95B432A10733C0033817B /* ViewController.swift in Sources */,
 				48D95B3F2A10733C0033817B /* AppDelegate.swift in Sources */,
 				48D95B412A10733C0033817B /* SceneDelegate.swift in Sources */,
