@@ -69,9 +69,9 @@ class secondViewController: UIViewController {
         let userId = UserDefaults.standard.string(forKey: "UserIdStore")
         let userPassword = UserDefaults.standard.string(forKey: "UserPasswordStore")
         
-        if loginId.text != userId && loginPassword.text != userPassword{
+        if loginId.text != userId || loginPassword.text != userPassword{
             loginAlert(title: "알림", message: "아이디/비번을 다시 입력해주세요")
-        } else {
+        } else if loginId.text == userId && loginPassword.text == userPassword  {
             loginAlert(title: "알림", message: "로그인되었습니다.")
 
             loginId.text = "아이디"
