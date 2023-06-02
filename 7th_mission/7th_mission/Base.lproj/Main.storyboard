@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--알람 추가-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_th_mission" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="jdl-XV-f7q">
+                                <rect key="frame" x="5" y="69" width="383" height="216"/>
+                                <connections>
+                                    <action selector="timePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="k5d-eL-V96"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYJ-zc-4QH">
+                                <rect key="frame" x="60" y="305" width="63" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="reset"/>
+                                <connections>
+                                    <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFh-mT-liC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBd-js-Hak">
+                                <rect key="frame" x="274" y="305" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="save"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ybq-3l-dfI"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dqL-kS-BYC">
+                                <rect key="frame" x="10" y="350" width="373" height="458"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="alarmTableViewCell" rowHeight="121" id="7L7-8t-3fm" customClass="alarmTableViewCell" customModule="_th_mission" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="373" height="121"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7L7-8t-3fm" id="0vO-BK-FR9">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="121"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜표시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kc-Uo-bfi">
+                                                    <rect key="frame" x="25" y="21.000000000000004" width="323" height="32.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0Kc-Uo-bfi" firstAttribute="leading" secondItem="0vO-BK-FR9" secondAttribute="leadingMargin" constant="5" id="As8-NR-Jj5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0Kc-Uo-bfi" secondAttribute="trailing" constant="5" id="nIW-go-f5J"/>
+                                                <constraint firstItem="0Kc-Uo-bfi" firstAttribute="top" secondItem="0vO-BK-FR9" secondAttribute="topMargin" constant="10" id="wfd-Vy-REf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="0Kc-Uo-bfi" id="Uiz-80-EgS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lBd-js-Hak" firstAttribute="top" secondItem="jdl-XV-f7q" secondAttribute="bottom" constant="20" id="FVf-1i-yWt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dqL-kS-BYC" secondAttribute="bottom" constant="10" id="Jyd-T4-IFH"/>
+                            <constraint firstItem="dqL-kS-BYC" firstAttribute="top" secondItem="kYJ-zc-4QH" secondAttribute="bottom" constant="10" id="UCP-i9-r9D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dqL-kS-BYC" secondAttribute="trailing" constant="10" id="Y7z-Yo-vHe"/>
+                            <constraint firstItem="kYJ-zc-4QH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="ZcA-oc-yGy"/>
+                            <constraint firstItem="dqL-kS-BYC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="b5C-si-mBj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lBd-js-Hak" secondAttribute="trailing" constant="60" id="cfi-02-tL6"/>
+                            <constraint firstItem="jdl-XV-f7q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="e3C-Cn-OrK"/>
+                            <constraint firstAttribute="trailing" secondItem="jdl-XV-f7q" secondAttribute="trailing" constant="5" id="jwE-Su-GE8"/>
+                            <constraint firstItem="kYJ-zc-4QH" firstAttribute="top" secondItem="jdl-XV-f7q" secondAttribute="bottom" constant="20" id="tFj-4z-Ujz"/>
+                            <constraint firstItem="jdl-XV-f7q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="x2D-do-gvd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="알람 추가" id="sTw-lh-GPc"/>
+                    <connections>
+                        <outlet property="saveTable" destination="dqL-kS-BYC" id="IIm-lN-c1w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
